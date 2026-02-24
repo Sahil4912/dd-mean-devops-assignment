@@ -46,18 +46,6 @@ This project is a comprehensive demonstration of a **Containerized MEAN stack ap
 
 The application provides a simple yet powerful CRUD (Create, Read, Update, Delete) interface for managing tutorials, built with a multi-container Dockerized architecture and automated deployment pipeline.
 
-### 🎓 Learning Outcomes
-
-This project demonstrates:
-- ✅ Full-stack web application development
-- ✅ Docker containerization and multi-stage builds
-- ✅ Docker Compose orchestration
-- ✅ GitHub Actions CI/CD automation
-- ✅ AWS EC2 cloud deployment
-- ✅ Nginx reverse proxy configuration
-- ✅ Container registry management (Docker Hub)
-- ✅ Infrastructure as Code principles
-
 ---
 
 ## ✨ Features
@@ -135,32 +123,6 @@ This project demonstrates:
                                     │  (Web Browsers) │
                                     └─────────────────┘
 ```
-
-### Architecture Components
-
-1. **Frontend (Angular + Nginx)**
-   - Multi-stage Docker build
-   - Angular production build optimized for performance
-   - Served by Nginx for fast static content delivery
-   - Nginx acts as reverse proxy for API requests
-
-2. **Backend (Node.js + Express)**
-   - RESTful API server
-   - Handles all business logic
-   - Connects to MongoDB for data persistence
-   - Exposes endpoints on port 8080
-
-3. **Database (MongoDB)**
-   - Official MongoDB 6 Docker image
-   - Data persistence with Docker volumes
-   - Internal container communication
-
-4. **Reverse Proxy (Nginx)**
-   - Routes frontend requests to static files
-   - Proxies `/api/*` requests to backend container
-   - Single entry point on port 80
-
----
 
 ## 🛠️ Tech Stack
 
